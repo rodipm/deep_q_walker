@@ -7,7 +7,7 @@ class Game:
     def __init__(self, size):
         pg.init()
         self.size = (size, size)
-        self.screen = pg.display.set_mode(self.size)
+        # self.screen = pg.display.set_mode(self.size)
         self.number_of_grids = 3
         self.grid_size = size//self.number_of_grids
         self.grid_size_y = 10
