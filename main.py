@@ -89,7 +89,8 @@ if __name__ == "__main__":
                 # env.seed(0)
                 state = np.reshape(state, [1, state_size])
                 score = 0
-                while not done:
+                # while not done:
+                for _ in range(500):
                     # env.render()
                     possible_actions = env.get_possible_actions()
                     action = agent.act(state, possible_actions)
